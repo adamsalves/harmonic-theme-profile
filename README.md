@@ -2,4 +2,6 @@
 
 Harmonic's personal blog theme
 
-## Under construction
+Theme made for static sites generator [Harmonic](https://github.com/JSRocksHQ/harmonic)
+
+## Under development
