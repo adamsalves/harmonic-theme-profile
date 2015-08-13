@@ -12,18 +12,30 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
-  {% include "partials/navigation.html" %}
-
-  <header>
+  <div class="container">
+    <div class="row">
+      {% include "partials/navigation.html" %}
+      <header>
+          <section>
+              <h1>
+                  {{ config.title }}
+              </h1>
+          </section>
+      </header>
       <section>
-          <h1>
-              {{ config.title }}
-          </h1>
+        <ul>
+          {% for post in posts %}
+            <li>
+              <span>{{ post.date }}</span>
+              <article>
+                <a href="/{{ post.link }}">{{ post.title }}</a>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
       </section>
-  </header>
-
+    </div>
+  </div>
   {% include "partials/footer.html" %}
-
-</body>
+  </body>
 </html>

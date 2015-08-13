@@ -14,22 +14,23 @@
 <body>
 
   <div class="container">
-    {% include "partials/navigation.html" %}
-    
-    <ul>
-      {% for category in post.metadata.categories %}
-        <li class="categories">
-          <a class="{{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
-            {{ category }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="row">
+      {% include "partials/navigation.html" %}
 
-    <article class="content">
-      {{ post.content }}
-    </article>
+      <ul>
+        {% for category in post.metadata.categories %}
+          <li class="categories">
+            <a class="{{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
+              {{ category }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
+      <article class="content">
+        {{ post.content }}
+      </article>
+    </div>
   </div>
 
   {% include "partials/footer.html" %}
