@@ -11,5 +11,10 @@
     "harmonic",
     "profile"
   ],
-  "author": "Adams Alves"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamsalves/harmonic-theme-profile.git"
+  },
+  "author": "Adams Alves",
+  "license": "MIT"
 }
