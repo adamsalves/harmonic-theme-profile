@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ config.title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-    {% include "partials/navigation.html" %}
-    <header>
-        <section>
-            <h1>
-                {{ config.title }}
-            </h1>
-        </section>
-    </header>
+  {% include "partials/navigation.html" %}
 
-{% include "partials/footer.html" %}
+  <header>
+      <section>
+          <h1>
+              {{ config.title }}
+          </h1>
+      </section>
+  </header>
+
+  {% include "partials/footer.html" %}
 
 </body>
 </html>
