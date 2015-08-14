@@ -23,3 +23,7 @@ footer {
 	margin: 2px;
 	padding: 4px;
 }
+
+.pages ul, li{
+  display: inline;
+}
