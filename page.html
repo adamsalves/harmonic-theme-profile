@@ -14,10 +14,22 @@
   <body>
     <div class="container">
       <div class="row">
-        {% include "partials/navigation.html" %}
+        <div class="four columns">
+          {% include "partials/navigation.html" %}
+          <header>
+              <section>
+                  <h1>
+                      {{ config.title }}
+                  </h1>
+              </section>
+          </header>
+        </div>
+        <div class="eight columns">
           <article class="content">
             {{ page.content }}
           </article>
+        </div>
+
       </div>
     </div>
     {% include "partials/footer.html" %}

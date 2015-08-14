@@ -15,27 +15,30 @@
 
   <div class="container">
     <div class="row">
-      {% include "partials/navigation.html" %}
-      <header>
-          <section>
-              <h1>
-                  {{ config.title }}
-              </h1>
-          </section>
-      </header>
-      <ul>
-        {% for category in post.metadata.categories %}
-          <li class="categories">
-            <a class="{{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
-              {{ category }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      <article class="content">
-        {{ post.content }}
-      </article>
+      <div class="four columns">
+        {% include "partials/navigation.html" %}
+        <header>
+            <section>
+                <h1>
+                    {{ config.title }}
+                </h1>
+            </section>
+        </header>
+      </div>
+      <div class="eight columns">
+        <ul>
+          {% for category in post.metadata.categories %}
+            <li class="categories">
+              <a class="{{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
+                {{ category }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <article class="content">
+          {{ post.content }}
+        </article>
+      </div>
     </div>
   </div>
 
