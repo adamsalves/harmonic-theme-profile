@@ -16,7 +16,13 @@
   <div class="container">
     <div class="row">
       {% include "partials/navigation.html" %}
-
+      <header>
+          <section>
+              <h1>
+                  {{ config.title }}
+              </h1>
+          </section>
+      </header>
       <ul>
         {% for category in post.metadata.categories %}
           <li class="categories">

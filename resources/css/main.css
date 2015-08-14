@@ -1,0 +1,25 @@
+footer {
+	text-align: center;
+	height: 103px;
+	background: rgb(240, 240, 240);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.languages {
+  margin: 15px;
+}
+
+.languages span {
+  margin: 5px;
+}
+
+.categories {
+	margin-bottom: 1rem;
+	list-style: none;
+	display: inline;
+	margin: 2px;
+	padding: 4px;
+}
