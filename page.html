@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-
-    {% include "partials/navigation.html" %}
-      <article class="content">
-        {{ page.content }}
-      </article>
+    <div class="container">
+      <div class="row">
+        {% include "partials/navigation.html" %}
+          <article class="content">
+            {{ page.content }}
+          </article>
+      </div>
+    </div>
     {% include "partials/footer.html" %}
-
-  </body>
+</body>
 </html>
