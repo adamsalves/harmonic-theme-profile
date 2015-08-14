@@ -14,27 +14,31 @@
 <body>
   <div class="container">
     <div class="row">
-      {% include "partials/navigation.html" %}
-      {% include "partials/pages_nav.html" %}
-      <header>
-          <section>
-              <h1>
-                  {{ config.title }}
-              </h1>
-          </section>
-      </header>
-      <section>
-        <ul>
-          {% for post in posts %}
-            <li>
-              <span>{{ post.date }}</span>
-              <article>
-                <a href="/{{ post.link }}">{{ post.title }}</a>
-              </article>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
+      <div class="four columns">
+        {% include "partials/navigation.html" %}
+        <header>
+            <section>
+                <h1>
+                    {{ config.title }}
+                </h1>
+            </section>
+        </header>
+        {% include "partials/pages_nav.html" %}
+      </div>
+      <div class="eight columns">
+        <section>
+          <ul>
+            {% for post in posts %}
+              <li>
+                <span>{{ post.date }}</span>
+                <article>
+                  <a href="/{{ post.link }}">{{ post.title }}</a>
+                </article>
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
   {% include "partials/footer.html" %}
