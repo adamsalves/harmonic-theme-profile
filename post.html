@@ -21,6 +21,9 @@
       </div>
       <div class="eight columns text-content">
         <main>
+          <article class="content">
+            {{ post.content }}
+          </article>
           <section>
             <ul>
               {% for category in post.metadata.categories %}
@@ -32,9 +35,6 @@
               {% endfor %}
             </ul>
           </section>
-          <article class="content">
-            {{ post.content }}
-          </article>
         </main>
       </div>
     </div>

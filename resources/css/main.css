@@ -17,8 +17,8 @@ section.post ul{
 }
 
 .header {
-	background-color:#F0F0F0;
-	padding:20px;
+	background-color: #F0F0F0;
+	padding: 20px;
 }
 
 .categories {
@@ -35,4 +35,9 @@ section.post ul{
 
 .text-content {
 	margin-top: 15px;
+	margin-bottom: 100px;
+}
+
+article.content {
+	padding: 15px;
 }

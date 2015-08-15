@@ -28,6 +28,9 @@
                 <span>{{ post.date }}</span>
                 <article>
                   <a href="/{{ post.link }}">{{ post.title }}</a>
+                  <p>
+                    {{ post.description }}
+                  </p>
                 </article>
               </li>
               {% endfor %}
