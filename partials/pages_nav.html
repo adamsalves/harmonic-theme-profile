@@ -1,8 +1,8 @@
 <nav class="pages">
   <ul>
-    {% for page in pages %}
+    {% for page in config.pages %}
       <li>
-          <a href="/{{ page.link }}">{{ page.title }}</a>
+          <a href="{{ page.link }}">{{ page.title | capitalize }}</a>
       </li>
     {% endfor %}
   </ul>

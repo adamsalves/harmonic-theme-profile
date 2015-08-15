@@ -3,5 +3,9 @@
 
   "mycustomdata" : "wow",
   "foo" : "bar",
-  "baz" : ["a","b"]
+  "baz" : ["a","b"],
+	"pages": [
+		{ "title":"about-me","link":"/pages/about-me" },
+		{ "title":"about","link":"/pages/about" }
+	]
 }
