@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.metadata.title }} - {{ config.title }}</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.metadata.title }} - {{ config.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="four columns">
-          {% include "partials/navigation.html" %}
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="four columns">
+        {% include "partials/navigation.html" %}
 
-          {% include "partials/header.html" %}
+        {% include "partials/header.html" %}
 
-          {% include "partials/pages_nav.html" %}
-        </div>
-        <div class="eight columns text-content">
+        {% include "partials/pages_nav.html" %}
+      </div>
+      <div class="eight columns text-content">
+        <main>
           <article class="content">
             {{ page.content }}
           </article>
-        </div>
-
+        </main>
       </div>
     </div>
-    {% include "partials/footer.html" %}
+  </div>
+  {% include "partials/footer.html" %}
 </body>
 </html>

@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ config.title }}</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>{{ config.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   <div class="container">
@@ -22,21 +22,23 @@
         {% include "partials/pages_nav.html" %}
       </div>
       <div class="eight columns text-content">
-        <section>
-          <ul>
-            {% for post in posts %}
+        <main>
+          <section>
+            <ul>
+              {% for post in posts %}
               <li>
                 <span>{{ post.date }}</span>
                 <article>
                   <a href="/{{ post.link }}">{{ post.title }}</a>
                 </article>
               </li>
-            {% endfor %}
-          </ul>
-        </section>
+              {% endfor %}
+            </ul>
+          </section>
+        </main>
       </div>
     </div>
   </div>
   {% include "partials/footer.html" %}
-  </body>
+</body>
 </html>
