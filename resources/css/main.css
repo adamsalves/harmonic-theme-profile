@@ -16,6 +16,11 @@ section.post ul{
 	list-style: none;
 }
 
+.header {
+	background-color:#F0F0F0;
+	padding:20px;
+}
+
 .categories {
 	margin-bottom: 1rem;
 	list-style: none;
