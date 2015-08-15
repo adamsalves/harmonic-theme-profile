@@ -8,12 +8,8 @@ footer {
 	padding-top: 30px;
 }
 
-.languages {
-  margin-top: 15px;
-}
-
-.languages span {
-  margin: 5px;
+header h1 {
+	margin-top: 10px;
 }
 
 .categories {
@@ -24,7 +20,7 @@ footer {
 	padding: 4px;
 }
 
-.pages ul, li{
+.nav-menu li{
   display: inline;
 }
 
