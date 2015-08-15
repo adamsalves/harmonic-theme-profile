@@ -1,9 +1,12 @@
 <nav class="languages">
-  {% for flag in config.i18n.languages %}
-  <span>
-    <a href="{% if flag == config.i18n.default %}/{% else %}/{{ flag }}{% endif %}">
-      {{ flag }}
-    </a>
-  </span>
-  {% endfor %}
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    {% for page in config.pages %}
+      <li>
+          <a href="{{ page.link }}">{{ page.title | capitalize }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
