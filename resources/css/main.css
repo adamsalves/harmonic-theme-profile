@@ -38,6 +38,10 @@ section.post ul{
 	margin-bottom: 100px;
 }
 
-article.content {
-	padding: 15px;
+.post-list>li>span {
+	font-size: 15px;
+}
+
+.post-list>li>article a {
+	font-size: 30px;
 }
