@@ -12,6 +12,10 @@ header h1 {
 	margin-top: 10px;
 }
 
+section.post ul{
+	list-style: none;
+}
+
 .categories {
 	margin-bottom: 1rem;
 	list-style: none;
