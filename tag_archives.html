@@ -16,26 +16,16 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  {% include "partials/header.html" %}
-  <main>
-    <section>
-      <ul>
-        {% for post in posts %}
-        <li>
-          <span>
-            {{ post.date }}
-          </span>
-          <article>
-            <a href="{{ post.link }}">
-              {{ post.title }}
-            </a>
-            <section>
-              {{ post.content }}
-            </section>
-          </article>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-  </main>
-  {% include "partials/footer.html" %}
+{% include "partials/header.html" %}
+<main>
+  <section>
+    {% for post in posts %}
+    <article>
+      <a href="{{ post.link }}">{{ post.title }}</a>
+      {{ post.content }}
+      <time datetime="{{ post.metadata.date }}">{{ post.metadata.date }}</time>
+    </article>
+    {% endfor %}
+</section>
+</main>
+{% include "partials/footer.html" %}

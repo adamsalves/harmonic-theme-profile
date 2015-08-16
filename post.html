@@ -16,12 +16,14 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  {% include "partials/header.html" %}
-  <main>
-    <article>
-      <span>{{ post.metadata.date }}</span>
-      {{ post.content }}
-    </article>
+{% include "partials/header.html" %}
+<main>
+  <article>
+    <header>
+      <time datetime="{{ post.metadata.date }}">{{ post.metadata.date }}</time>
+      <h2>{{ post.metadata.title }}</h2>
+    </header>
+    {{ post.content }}
     <section>
       <ul>
         {% for category in post.metadata.categories %}
@@ -33,5 +35,6 @@
         {% endfor %}
       </ul>
     </section>
-  </main>
-  {% include "partials/footer.html" %}
+  </article>
+</main>
+{% include "partials/footer.html" %}

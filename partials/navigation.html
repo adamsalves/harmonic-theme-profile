@@ -1,12 +1,8 @@
 <nav>
   <ul class="nav-menu">
-    <li>
-      <a href="/">Home</a>
-    </li>
+    <li><a href="/">Home</a></li>
     {% for page in config.pages %}
-      <li>
-          <a href="{{ page.link }}">{{ page.title | capitalize }}</a>
-      </li>
+      <li><a href="{{ page.link }}">{{ page.title | capitalize }}</a></li>
     {% endfor %}
   </ul>
 </nav>
