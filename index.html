@@ -11,34 +11,22 @@
   <meta name="MobileOptimized" content="320">
   <meta name="keywords" content="javascript, html, html5, css, css3, frontend, web" />
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   {% include "partials/header.html" %}
 
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns text-content">
-        <main>
-          <section class="post">
-            <ul class="post-list">
-              {% for post in posts %}
-              <li>
-                <span>{{ post.date }}</span>
-                <article>
-                  <a href="/{{ post.link }}">{{ post.title }}</a>
-                  <p>
-                    {{ post.description }}
-                  </p>
-                </article>
-              </li>
-              {% endfor %}
-            </ul>
-          </section>
-        </main>
-      </div>
-    </div>
-  </div>
-{% include "partials/footer.html" %}
+  <main>
+    <section>
+      {% for post in posts %}
+      <time datetime="{{ post.date }}">{{ post.date }}</time>
+      <article>
+        <a href="/{{ post.link }}">{{ post.title }}</a>
+        <p>{{ post.description }}</p>
+      </article>
+      {% endfor %}
+    </section>
+  </main>
+  {% include "partials/footer.html" %}
