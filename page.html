@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.metadata.title }} - {{ config.title }}</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="{{ config.author }}">
+  <meta name="description" content="{{ config.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="/css/normalize.css">
@@ -28,6 +28,4 @@
       </div>
     </div>
   </div>
-  {% include "partials/footer.html" %}
-</body>
-</html>
+{% include "partials/footer.html" %}

@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ config.title }}</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="{{ config.author }}">
+  <meta name="description" content="{{ config.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="keywords" content="javascript, html, html5, css, css3, frontend, web" />
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
@@ -40,6 +44,4 @@
       </div>
     </div>
   </div>
-  {% include "partials/footer.html" %}
-</body>
-</html>
+{% include "partials/footer.html" %}
