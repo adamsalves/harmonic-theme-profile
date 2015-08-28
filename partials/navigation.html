@@ -1,15 +1,15 @@
 <nav class="nav">
-  <ul class="nav-list pages">
-    <li><a href="/">Home</a></li>
+  <ul class="nav-list">
+    <li class="nav-item"><a href="/">Home</a></li>
     {% for page in config.pages %}
-      <li class="page"><a href="{{ page.link }}">{{ page.title | capitalize }}</a></li>
+      <li class="nav-item"><a href="{{ page.link }}">{{ page.title | capitalize }}</a></li>
     {% endfor %}
-    <li class="nav-item">
+    <li class="social-item">
       <a class="pure-button" href="https://twitter.com/adams_alves">
         <i class="fa fa-twitter fa-2x"></i>
       </a>
     </li>
-    <li class="nav-item">
+    <li class="social-item">
       <a class="pure-button" href="https://github.com/adamsalves">
         <i class="fa fa-github fa-2x"></i>
       </a>

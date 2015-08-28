@@ -61,24 +61,11 @@ h3 {
     padding: 0;
     list-style: none;
 }
-ul.nav-list.pages {
+ul.nav-list {
   padding-top: 25px;
 }
-.page a {
-  background: transparent;
-  color: #fff;
-  margin-top: 1em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-size: 85%;
-}
-
-.nav-item {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-}
-.nav-item a {
+.nav-item a,
+.social-item a {
     background: transparent;
     color: #fff;
     margin-top: 1em;
@@ -87,8 +74,15 @@ ul.nav-list.pages {
     font-size: 85%;
 }
 .nav-item a:hover,
-.nav-item a:focus {
+.nav-item a:focus,
+.social-item a:hover,
+.social-item a:focus {
     text-decoration: none;
+}
+.social-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
 }
 
 .content-subhead {
