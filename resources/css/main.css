@@ -160,13 +160,8 @@ ul.nav-list {
 .footer {
     text-align: center;
     padding: 1em 0;
-}
-.footer p {
     color: #aaa;
     font-size: 100%;
-}
-.footer .pure-menu p,
-.footer .pure-menu p {
     background: none;
 }
 
