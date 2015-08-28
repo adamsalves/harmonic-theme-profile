@@ -2,8 +2,8 @@
 <html lang="en">
   {% include "partials/head.html" %}
 <body>
-{% include "partials/header.html" %}
-<main>
+<main id="layout" class="pure-g">
+  {% include "partials/header.html" %}
   <section>
   {% for post in posts %}
     <article>
