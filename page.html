@@ -7,22 +7,28 @@
   <meta name="description" content="{{ config.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="keywords" content="javascript, html, html5, css, css3, frontend, web" />
 
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-{% include "partials/header.html" %}
-<main>
-  <article>
-    <header>
-      <h2>{{ page.metadata.title }}</h2>
-    </header>
-    {{ page.content }}
-  </article>
-</main>
-{% include "partials/footer.html" %}
+  <div id="layout" class="pure-g">
+    {% include "partials/header.html" %}
+    <main class="content pure-u-1 pure-u-md-3-4">
+      <article>
+        <header>
+          <h2>{{ page.metadata.title }}</h2>
+        </header>
+        {{ page.content }}
+      </article>
+      {% include "partials/footer.html" %}
+    </main>
+  </div>
