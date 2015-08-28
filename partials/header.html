@@ -6,12 +6,11 @@
 
       <nav class="nav">
         <ul class="nav-list pages">
+          {% for page in config.pages %}
             <li class="page">
-                <a href="#">Sobre</a>
+              <a href="{{ page.link }}">{{ page.title | capitalize }}</a>
             </li>
-            <li class="page">
-                <a href="#">Contato</a>
-            </li>
+          {% endfor %}
         </ul>
           <ul class="nav-list">
               <li class="nav-item">
