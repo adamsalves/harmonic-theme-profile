@@ -65,7 +65,7 @@ ul.nav-list {
   padding-top: 25px;
 }
 .nav-item a,
-.social-item a {
+.social a {
     background: transparent;
     color: #fff;
     margin-top: 1em;
@@ -75,14 +75,18 @@ ul.nav-list {
 }
 .nav-item a:hover,
 .nav-item a:focus,
-.social-item a:hover,
-.social-item a:focus {
+.social a:hover,
+.social a:focus {
     text-decoration: none;
 }
-.social-item {
+.social {
     display: inline-block;
     *display: inline;
     zoom: 1;
+}
+.social-item {
+  display: inline-block;
+  padding: 10px;
 }
 
 .content-subhead {
