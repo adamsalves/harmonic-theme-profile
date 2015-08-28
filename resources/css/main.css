@@ -146,6 +146,11 @@ ul.nav-list {
     .post-category-js {
         background: #df2d4f;
     }*/
+.category li {
+  list-style: none;
+  display: inline-block;
+  *display: inline;
+}
 
 .post-images {
     margin: 1em 0;

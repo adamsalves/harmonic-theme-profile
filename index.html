@@ -11,7 +11,19 @@
         <article>
           <header class="post-header">
             <h1 class="post-title"><a href="/{{ post.link }}">{{ post.title }}</a></h1>
-            <span class="post-meta"><time datetime="{{ post.date }}">{{ post.date }}</time></span>
+              <span class="post-meta">
+                <ul class="category">
+                  Publicado em <time datetime="{{ post.date }}">{{ post.date }}</time>
+                  Tags
+                  {% for category in post.categories %}
+                  <li>
+                    <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category }}">
+                      {{ category }}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </span>
           </header>
 
           <div class="post-description">
