@@ -107,13 +107,13 @@ ul.nav-list {
     padding-bottom: 2em;
 }
 .post-title {
-    font-size: 2em;
-    color: #222;
+    font-size: 2.5em;
+    color: #444;
     margin-bottom: 0.2em;
 }
 .post-title a {
   text-decoration: none;
-  color: #444;
+  color: #50585D;
 }
 .post-avatar {
     border-radius: 50px;
@@ -133,10 +133,10 @@ ul.nav-list {
 
 .post-category {
     margin: 0 0.1em;
-    padding: 0.3em 1em;
-    color: #CCC;
+    padding: 0.3em 0.5em;
+    color: #999;
     /*background: #999;*/
-    font-size: 80%;
+    font-size: 100%;
 }
     /*.post-category-design {
         background: #5aba59;
@@ -150,11 +150,11 @@ ul.nav-list {
     .post-category-js {
         background: #df2d4f;
     }*/
-.category li {
+/*.category li {
   list-style: none;
   display: inline-block;
   *display: inline;
-}
+}*/
 
 .post-images {
     margin: 1em 0;
