@@ -111,6 +111,10 @@ ul.nav-list {
     color: #222;
     margin-bottom: 0.2em;
 }
+.post-title a {
+  text-decoration: none;
+  color: #444;
+}
 .post-avatar {
     border-radius: 50px;
     float: right;
