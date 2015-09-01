@@ -13,7 +13,7 @@
           <p class="post-meta">
             <time datetime="{{ post.metadata.date }}">{{ post.metadata.date }}</time>
             {% for category in post.metadata.categories %}
-              <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category }}">
+              <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
                 {{ category }}
               </a>
             {% endfor %}
