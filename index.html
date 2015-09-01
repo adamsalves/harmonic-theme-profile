@@ -12,19 +12,17 @@
           <header class="post-header">
             <h2 class="post-title"><a href="/{{ post.link }}">{{ post.title }}</a></h2>
               <p class="post-meta">
-                  <time datetime="{{ post.date }}">{{ post.date }}</time>
-                  {% for category in post.categories %}
-                    <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category }}">
-                      {{ category }}
-                    </a>
-                  {% endfor %}
+                <time datetime="{{ post.date }}">{{ post.date }}</time>
+                {% for category in post.categories %}
+                  <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category }}">
+                    {{ category }}
+                  </a>
+                {% endfor %}
               </p>
           </header>
-
           <div class="post-description">
             <p>{{ post.description }}</p>
           </div>
-
         </article>
       </section>
     </div>
