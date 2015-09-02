@@ -20,6 +20,8 @@ h3 {
 
 article p {
   color: #444;
+  font-size: 1.5em;
+  line-height: 1.3em;
 }
 
 /* LAYOUT CSS */
