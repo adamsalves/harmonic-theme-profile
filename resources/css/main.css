@@ -110,7 +110,8 @@ ul.nav-list {
 .post {
     padding-bottom: 2em;
 }
-.post-title {
+.post-title,
+.page-title {
     font-size: 2.5em;
     color: #444;
     margin-bottom: 0.2em;
