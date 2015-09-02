@@ -14,7 +14,7 @@
               <p class="post-meta">
                 <time datetime="{{ post.date }}">{{ post.date }}</time>
                 {% for category in post.categories %}
-                  <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category }}">
+                  <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
                     {{ category }}
                   </a>
                 {% endfor %}
@@ -29,5 +29,4 @@
     {% endfor %}
     {% include "partials/footer.html" %}
   </main>
-
 </div>
