@@ -18,6 +18,10 @@ h3 {
     font-weight: 100;
 }
 
+article p {
+  color: #444;
+}
+
 /* LAYOUT CSS */
 .pure-img-responsive {
     max-width: 100%;
