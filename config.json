@@ -5,7 +5,6 @@
   "foo" : "bar",
   "baz" : ["a","b"],
 	"pages": [
-		{ "title":"about-me","link":"/pages/about-me" },
-		{ "title":"about","link":"/pages/about" }
+		{ "title":"sobre","link":"/pages/sobre" }
 	]
 }
