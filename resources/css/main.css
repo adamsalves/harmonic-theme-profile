@@ -203,7 +203,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 .brand-title,
 .brand-tagline {
-    margin: 0;
+    margin: 13px;
 }
 .brand-title {
     text-transform: uppercase;
@@ -219,7 +219,7 @@ table.plain tbody > tr:nth-child(odd) > th {
     list-style: none;
 }
 ul.nav-list {
-  padding-top: 25px;
+  padding-top: 10px;
 }
 .nav-item a,
 .social a {
