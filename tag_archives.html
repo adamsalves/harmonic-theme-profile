@@ -6,14 +6,16 @@
 <body>
 {% include "partials/header.html" %}
 <main>
-  <section>
     {% for post in posts %}
     <article>
-      <a href="{{ post.link }}">{{ post.title }}</a>
-      {{ post.content }}
-      <time datetime="{{ post.metadata.date }}">{{ post.metadata.date }}</time>
+      <header>
+        <a href="{{ post.link }}">{{ post.title }}</a>
+        <time datetime="{{ post.metadata.date }}">{{ post.metadata.date }}</time>
+      </header>
+      <section>
+        {{ post.content }}
+      </section>
     </article>
     {% endfor %}
-</section>
 </main>
 {% include "partials/footer.html" %}

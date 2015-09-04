@@ -28,7 +28,9 @@
         <header class="page-header">
           <h2 class="page-title">{{ page.metadata.title }}</h2>
         </header>
-        {{ page.content }}
+        <section>
+          {{ page.content }}
+        </section>
       </article>
       {% include "partials/footer.html" %}
     </main>

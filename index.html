@@ -2,31 +2,27 @@
 <html lang="en">
 {% include "partials/head.html" %}
 <body>
-<div id="layout" class="pure-g">
-  {% include "partials/header.html" %}
-  <main class="content pure-u-1 pure-u-md-3-4">
-    {% for post in posts %}
-    <div class="posts">
-      <section class="post">
-        <article>
-          <header class="post-header">
-            <h2 class="post-title"><a href="/{{ post.link }}">{{ post.title }}</a></h2>
-              <p class="post-meta">
-                <time datetime="{{ post.date }}">{{ post.date }}</time>
-                {% for category in post.categories %}
-                  <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
-                    {{ category }}
-                  </a>
-                {% endfor %}
-              </p>
-          </header>
-          <div class="post-description">
-            <p>{{ post.description }}</p>
-          </div>
-        </article>
-      </section>
-    </div>
-    {% endfor %}
-    {% include "partials/footer.html" %}
-  </main>
-</div>
+  <div id="layout" class="pure-g">
+    {% include "partials/header.html" %}
+    <main class="content pure-u-1 pure-u-md-3-4">
+      {% for post in posts %}
+      <article class="posts">
+        <header class="post-header">
+          <h2 class="post-title"><a href="/{{ post.link }}">{{ post.title }}</a></h2>
+          <p class="post-meta">
+            <time datetime="{{ post.date }}">{{ post.date }}</time>
+            {% for category in post.categories %}
+            <a class="post-category {{ category }}" href="/categories/{% if post.metadata.default_lang %}/{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
+              {{ category }}
+            </a>
+            {% endfor %}
+          </p>
+        </header>
+        <section class="post-description">
+          <p>{{ post.description }}</p>
+        </section>
+      </article>
+      {% endfor %}
+      {% include "partials/footer.html" %}
+    </main>
+  </div>

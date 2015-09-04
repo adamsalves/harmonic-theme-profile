@@ -108,7 +108,7 @@ pre {
 }
 
 pre code, tt {
-    font-size: inherit;
+    font-size: 1.2em;
     white-space: -moz-pre-wrap;
     white-space: pre-wrap;
     background: transparent;
@@ -262,6 +262,12 @@ ul.nav-list {
 
 .post {
     padding-bottom: 2em;
+}
+.post-content img {
+    display: block;
+    max-width: 100%;
+    margin: 0px auto;
+    height: auto;
 }
 .post-title,
 .page-title {
