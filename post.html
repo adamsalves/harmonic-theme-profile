@@ -22,6 +22,9 @@
       <section class="post-content">
         {{ post.content }}
       </section>
+      <footer class="author">
+        <p>Escrito por <strong>{{ config.author }} - {{ config.description }}</strong></p>
+      </footer>
     </article>
 
     {% include "partials/disqus.html" %}
