@@ -336,12 +336,18 @@ ul.nav-list {
     color: #aaa;
     font-size: 100%;
     background: none;
+    margin: 10px 0;
 }
 
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;
         margin-left: 30%;
+    }
+
+    .f-content {
+      padding: 2em 3em 0;
+      margin-left: 30%;
     }
 
     .header {
