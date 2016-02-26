@@ -8,7 +8,7 @@
       <section>
       {% for post in posts %}
         <div class="posts">
-          <header class="post-header">
+          <div class="post-header">
             <h2 class="post-title"><a href="/{{ post.link }}">{{ post.title }}</a></h2>
             <p class="post-meta">
               <time datetime="{{ post.date }}">{{ post.date }}</time>
@@ -18,7 +18,7 @@
               </a>
               {% endfor %}
             </p>
-          </header>
+          </div>
           <div class="post-description">
             <p>{{ post.description }}</p>
           </div>
