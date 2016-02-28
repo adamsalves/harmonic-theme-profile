@@ -6,5 +6,7 @@
   "baz" : ["a","b"],
 	"pages": [
 		{ "title":"sobre","link":"/pages/sobre" }
-	]
+	],
+	"twitter": "adams_alves",
+	"github": "adamsalves"
 }
